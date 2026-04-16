@@ -1,5 +1,5 @@
 import SideNav from "@/app/ui/dashboard/sidenav";
-import Toast from "../ui/dashboard/toast";
+import ToastInterface from "../ui/dashboard/toast";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -9,7 +9,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
       </div>
       <div className="grow p-6 md:overflow-y-auto md:p-12">
         {children}
-        <Toast />
+        <ToastInterface />
       </div>
     </div>
   );
